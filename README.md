@@ -41,11 +41,11 @@ ibus-setup
 
 * Add intelligent Pinyin in "Input Method"
 
-![image-20210624094336757](/home/chenghao/.config/Typora/typora-user-images/image-20210624094336757.png)
+![image-20210624094336757](images/image-20210624094336757.png)
 
 * Add intelligent Pinyin in the language setting: Chinese -> Chinese (Intelligent Pinyin)
 
-![image-20210624094625054](/home/chenghao/.config/Typora/typora-user-images/image-20210624094625054.png)
+![image-20210624094625054](images/image-20210624094625054.png)
 
 #### Setup VPN
 
@@ -89,7 +89,7 @@ alias unsetVPN="unset ALL_PROXY"
 
 * Open **Software & Updates** and choose `Additional Drivers`
 
-![image-20210624151701257](/home/chenghao/.config/Typora/typora-user-images/image-20210624151701257.png)
+![image-20210624151701257](images/image-20210624151701257.png)
 
 * Select latest NVIDIA driver and `Apply Changes`
 
@@ -125,19 +125,19 @@ sudo apt-get install filemanager-actions-nautilus-extension
 * Use `fma-config-tool` to start the config tool
 * Cancel root menu
 
-![image-20210623145601876](/home/chenghao/.config/Typora/typora-user-images/image-20210623145601876.png)
+![image-20210623145601876](images/image-20210623145601876.png)
 
 * Set "Open in Terminator" in right-click menu
 
-![image-20210623145409882](/home/chenghao/.config/Typora/typora-user-images/image-20210623145409882.png)
+![image-20210623145409882](images/image-20210623145409882.png)
 
-![image-20210623145630871](/home/chenghao/.config/Typora/typora-user-images/image-20210623145630871.png)
+![image-20210623145630871](images/image-20210623145630871.png)
 
 * Set "Open in VScode" in right-click menu
 
-![image-20210623151617235](/home/chenghao/.config/Typora/typora-user-images/image-20210623151617235.png)
+![image-20210623151617235](images/image-20210623151617235.png)
 
-![image-20210623151553048](/home/chenghao/.config/Typora/typora-user-images/image-20210623151553048.png)
+![image-20210623151553048](images/image-20210623151553048.png)
 
 #### Install Typora
 
@@ -309,7 +309,7 @@ sudo sh install
  nvidia-smi
 ```
 
-![image-20210625151229816](/home/chenghao/.config/Typora/typora-user-images/image-20210625151229816.png)
+![image-20210625151229816](images/image-20210625151229816.png)
 
 * Download and install CUDA on [official website](https://developer.nvidia.com/cuda-toolkit-archive)
 
@@ -332,7 +332,7 @@ export LD_LIBRARY_PATH="/usr/local/cuda/lib64:$LD_LIBRARY_PATH"
 nvcc -V
 ```
 
-![image-20210625151358092](/home/chenghao/.config/Typora/typora-user-images/image-20210625151358092.png)
+![image-20210625151358092](images/image-20210625151358092.png)
 
 #### Install cuDNN
 
@@ -438,7 +438,7 @@ export MUJOCO_KEY_PATH=~/.mujoco${MUJOCO_KEY_PATH}
 ~/.mujoco/mujoco200/bin/simulate ~/.mujoco/mujoco200/model/humanoid.xml
 ```
 
-![image-20210624162835346](/home/chenghao/.config/Typora/typora-user-images/image-20210624162835346.png)
+![image-20210624162835346](images/image-20210624162835346.png)
 
 #### Install mujoco-py
 
@@ -511,7 +511,7 @@ pip3 install -U 'mujoco-py<2.1,>=2.0'
   python3 examples/body_interaction.py
   ```
   
-  ![image-20210624172622703](/home/chenghao/.config/Typora/typora-user-images/image-20210624172622703.png)
+  ![image-20210624172622703](images/image-20210624172622703.png)
 
 #### Install Gym
 
