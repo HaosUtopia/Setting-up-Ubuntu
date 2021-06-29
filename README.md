@@ -99,6 +99,19 @@ alias unsetVPN="unset ALL_PROXY"
 sudo apt-get install terminator
 ```
 
+#### Install Chrome
+
+```bash
+# download chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+# install chrome
+sudo apt-get install ./google-chrome-stable_current_amd64.deb
+
+# clean the deb file
+rm google-chrome-stable_current_amd64.deb
+```
+
 #### Install VScode
 
 * Download install deb file in [VScode website](https://code.visualstudio.com/)
