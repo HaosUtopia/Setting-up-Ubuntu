@@ -534,7 +534,26 @@ pip3 install -U 'mujoco-py<2.1,>=2.0'
 pip3 install gym
 ```
 
+* Install Atari-py
+
+```bash
+pip3 install atari-py
+```
+
+* Import ROMS for Atari-py
+
+  * Download `Roms.rar` from the [Atari 2600 VCS ROM Collection](http://www.atarimania.com/rom_collection_archive_atari_2600_roms.html)
+  * Extract the `rar` file
+  * Extract the `ROMS.zip` and `HC ROMS.zip`
+  * Import ROMS
+
+  ```bash
+  python3 -m atari_py.import_roms <path to folder>/ROMS
+  python3 -m atari_py.import_roms <path to folder>/HC\ ROMS
+  ```
+
 * Test Gym
+
   * Start python3
 
   ```bash
