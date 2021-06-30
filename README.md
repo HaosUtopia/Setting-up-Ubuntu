@@ -166,6 +166,15 @@ sudo apt-get update
 sudo apt-get install typora
 ```
 
+#### Install Mendeley
+
+* Download the deb file on [official website](https://www.mendeley.com/guides/download-mendeley-desktop/ubuntu/instructions)
+* Install Mendeley
+
+```bash
+sudo dpkg -i <path-to-downloaded-package>
+```
+
 #### Setup git
 
 * Install git
