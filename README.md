@@ -9,8 +9,11 @@
 #### Install Necessary Staff
 
 ```bash
-# Update list
+# update list
 sudo apt-get update
+
+# install ubuntu extras
+sudo apt-get install ubuntu-restricted-extras
 
 # install network tools
 sudo apt-get install net-tools
@@ -23,6 +26,12 @@ sudo apt-get install xclip
 
 # install gedit plugins
 sudo apt-get install gedit-plugins
+
+# install video decoder
+sudo apt-get install ffmpeg
+
+# install pip3
+sudo apt-get install python3-pip
 ```
 
 #### Setup Pinyin Input
@@ -464,12 +473,6 @@ export MUJOCO_KEY_PATH=~/.mujoco${MUJOCO_KEY_PATH}
 
 #### Install mujoco-py
 
-* Install **pip3**
-
-```bash
-sudo apt-get install python3-pip
-```
-
 * Install requirements
 
 ```bash
@@ -479,12 +482,14 @@ sudo apt-get install libosmesa6-dev libgl1-mesa-glx libglfw3 libglew-dev patchel
 # Create symbolic link
 sudo ln -s /usr/lib/x86_64-linux-gnu/libGL.so.1 /usr/lib/x86_64-linux-gnu/libGL.so
 
-# Add environment variable to ~/.bashrc
-echo "export LD_PRELOAD=$LD_PRELOAD:/usr/lib/x86_64-linux-gnu/libGLEW.so" >> ~/.bashrc
-source ~/.bashrc
-
-# Install dependent python package
+# Install dependent python packages
 pip3 install fasteners
+pip3 install imageio_ffmpeg
+
+# Add environment variable to ~/.bashrc
+echo "export LD_PRELOAD=\$LD_PRELOAD:/usr/lib/x86_64-linux-gnu/libGLEW.so" >> ~/.bashrc
+echo "export IMAGEIO_FFMPEG_EXE=/usr/bin/ffmpeg" >> ~/.bashrc
+source ~/.bashrc
 ```
 
 * Install mujoco-py
@@ -549,6 +554,12 @@ pip3 install gym
 pip3 install atari-py
 ```
 
+* Install Highway-env
+
+```bash
+pip3 install highway-env
+```
+
 * Import ROMS for Atari-py
 
   * Download `Roms.rar` from the [Atari 2600 VCS ROM Collection](http://www.atarimania.com/rom_collection_archive_atari_2600_roms.html)
@@ -591,10 +602,12 @@ pip3 install atari-py
 
 ```bash
 # Install dependent libraries
-sudo apt-get install cmake libopenmpi-dev python3-dev zlib1g-dev
+sudo apt-get install cmake libopenmpi-dev python3-dev zlib1g-dev swig
 
 # Install dependent python package
 pip3 install scikit-build
+pip3 install mpi4py
+pip3 install box2d box2d-kengz
 ```
 
 * Clone the repository and go to the path
@@ -608,5 +621,11 @@ cd baselines
 
 ```bash
 pip3 install -e .
+```
+
+#### Install Stable Baselines
+
+```bash
+pip3 install stable-baselines[mpi]
 ```
 
