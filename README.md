@@ -149,7 +149,7 @@ sudo apt-get install filemanager-actions-nautilus-extension
 
 ![image-20210623145601876](images/image-20210623145601876.png)
 
-* Set "Open in Terminator" in right-click menu
+* Set "Open in Terminator" in right-click menu ("Parameters" set to `--working-directory=%d/%b`)
 
 ![image-20210623145409882](images/image-20210623145409882.png)
 
