@@ -309,7 +309,7 @@ sudo sh install
 
   ```bash
   # Get MATLAB icon
-  sudo wget http://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png -O /usr/share/icons/matlab.png
+  sudo wget http://upload.wikimedia.org/wikipedia/commons/archive/2/21/20170128174109%21Matlab_Logo.png -O /usr/share/icons/matlab.png
   
   # Create desktop file
   sudo touch /usr/share/applications/matlab.desktop
