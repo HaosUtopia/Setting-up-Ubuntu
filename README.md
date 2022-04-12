@@ -262,6 +262,10 @@ rosdep update
 ```bash
 # install navigation-stack
 sudo apt-get install ros-melodic-navigation
+# install moveit
+sudo apt-get install ros-melodic-moveit
+# install combined-robot-hw
+sudo apt-get install ros-melodic-combined-robot-hw
 ```
 
 #### Install MATLAB
