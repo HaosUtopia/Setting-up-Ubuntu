@@ -41,6 +41,7 @@ sudo apt-get install python3-pip
 ```bash
 sudo apt-get install ibus-pinyin
 ```
+* Reboot the computer
 
 * Start ibus setup
 
