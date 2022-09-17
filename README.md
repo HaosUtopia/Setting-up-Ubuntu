@@ -164,6 +164,12 @@ touch ~/Templates/Untitled\ Document
   ```bash
   # install Filemanager action
   sudo apt-get install filemanager-actions
+  
+  # install Nautilus action
+  sudo apt-get install nautilus-actions
+  
+  # restart Nautilus
+  nautilus -q
   ```
 
 * Use `fma-config-tool` to start the config tool
@@ -287,6 +293,10 @@ sudo apt-get install ros-melodic-navigation
 sudo apt-get install ros-melodic-moveit
 # install combined-robot-hw
 sudo apt-get install ros-melodic-combined-robot-hw
+# install ros controllers
+sudo apt-get install ros-melodic-ros-controllers
+# install
+sudo apt-get install ros-melodic-roboticsgroup-upatras-gazebo-plugins
 ```
 
 #### Install MATLAB
