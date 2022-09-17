@@ -61,13 +61,13 @@ ibus-setup
 
 * Follow the instruction from [shadowsocks.nz](https://portal.shadowsocks.nz/knowledgebase/151/) and install **Clashy**
 
-* Add alias to ~/.bashrc
+* Add alias to ~/.bashrc (The **PORT** of proxy should be the same as the setting in Clashy)
 
 ```bash
 # Alias for proxy setting
-alias setVPN="export ALL_PROXY=socks5://127.0.0.1:1080"
-alias setSocksVPN="export ALL_PROXY=socks5://127.0.0.1:1080"
-alias setHttpsVPN="export ALL_PROXY=https://127.0.0.1:8080"
+alias setVPN="export ALL_PROXY=socks5://127.0.0.1:PORT"
+alias setSocksVPN="export ALL_PROXY=socks5://127.0.0.1:PORT"
+alias setHttpsVPN="export ALL_PROXY=https://127.0.0.1:PORT"
 alias unsetVPN="unset ALL_PROXY"
 ```
 
@@ -125,7 +125,19 @@ rm google-chrome-stable_current_amd64.deb
 #### Install VScode
 
 * Download install deb file in [VScode website](https://code.visualstudio.com/)
-* Double click the deb file and install
+* Install VScode
+
+```bash
+sudo apt-get install <path-to-downloaded-package>
+```
+
+* Install necessary plugins
+  * Better Comments
+  * C/C++
+  * C/C++ Extension Pack
+  * Git Graph
+  * ROS
+  * vscode-icons
 
 #### Setup right-click menu
 
@@ -137,13 +149,22 @@ touch ~/Templates/Untitled\ Document
 
 * Install Nautilus extension
 
-```bash
-# add repository
-sudo add-apt-repository ppa:daniel-marynicz/filemanager-actions
+  * Ubuntu 18.04
 
-# install Nautilus exetension
-sudo apt-get install filemanager-actions-nautilus-extension
-```
+  ```bash
+  # add repository
+  sudo add-apt-repository ppa:daniel-marynicz/filemanager-actions
+  
+  # install Nautilus exetension
+  sudo apt-get install filemanager-actions-nautilus-extension
+  ```
+
+  * Ubuntu 20.04
+
+  ```bash
+  # install Filemanager action
+  sudo apt-get install filemanager-actions
+  ```
 
 * Use `fma-config-tool` to start the config tool
 * Cancel root menu
@@ -165,15 +186,14 @@ sudo apt-get install filemanager-actions-nautilus-extension
 #### Install Typora
 
 ```bash
-# get key from web server
-wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -
-
-# add Typora's repository
-sudo add-apt-repository 'deb https://typora.io/linux ./'
-sudo apt-get update
+# get the last free version
+wget https://github.com/iuxt/src/releases/download/2.0/Typora_Linux_0.11.18_amd64.deb
 
 # install typora
-sudo apt-get install typora
+sudo apt-get install ./Typora_Linux_0.11.18_amd64.deb
+
+# clean the deb file
+rm Typora_Linux_0.11.18_amd64.deb
 ```
 
 #### Install Mendeley
@@ -182,7 +202,7 @@ sudo apt-get install typora
 * Install Mendeley
 
 ```bash
-sudo dpkg -i <path-to-downloaded-package>
+sudo apt-get install <path-to-downloaded-package>
 ```
 
 #### Setup git
